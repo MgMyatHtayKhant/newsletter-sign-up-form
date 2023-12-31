@@ -1,0 +1,22 @@
+:root {
+  --PRIMARY-COLOR: hsl(4, 100%, 67%);
+  --DARK-SLATE-GREY: hsl(234, 29%, 20%);
+  --CHARCOAL-GREY: hsl(235, 18%, 26%);
+  --GREY: hsl(231, 7%, 60%);
+  --WHITE: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+}

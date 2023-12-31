@@ -1,0 +1,126 @@
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--CHARCOAL-GREY);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem 1rem 0;
+  border-radius: 1rem;
+  background-color: var(--WHITE);
+}
+
+.container .child {
+  flex-basis: 100%;
+}
+
+.container .picture {
+  max-width: 375px;
+}
+
+.container .picture img {
+  display: block;
+}
+
+.container .form {
+  padding-inline: 2.5rem 2.5rem;
+  max-width: 436px;
+  order: -1;
+}
+
+.form .title {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+
+.form .description {
+  color: var(--GREY);
+  margin-bottom: 1rem;
+}
+
+.form .list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.form .list li {
+  background: url("./assets/images/icon-list.svg") left center no-repeat;
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+
+.form .label {
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form .email {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.form .submit-btn {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding-block: 1rem;
+  border: none;
+  color: var(--WHITE);
+  background-color: var(--DARK-SLATE-GREY);
+}
+
+@media (max-width: 756px) {
+  .container .form {
+    padding-inline: 1rem 1rem;
+  }
+  .form .title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .form .description {
+    margin-bottom: 0.5rem;
+  }
+  .form .list {
+    margin-bottom: 1rem;
+  }
+  .form .email {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 0 3rem 0;
+    border-radius: 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .container .form {
+    max-width: 375px;
+    order: 1;
+  }
+  .form .title {
+    margin-bottom: 1rem;
+  }
+  .form .description {
+    margin-bottom: 1rem;
+  }
+  .form .list {
+    margin-bottom: 2rem;
+  }
+  .form .email {
+    margin-bottom: 1rem;
+  }
+}
