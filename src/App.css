@@ -55,9 +55,15 @@ main {
 }
 
 .form .label {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
   font-weight: 500;
   margin-bottom: 5px;
+}
+
+.label .valid-email-required {
+  color: var(--PRIMARY-COLOR);
 }
 
 .form .email {
@@ -66,8 +72,18 @@ main {
   font-size: 1rem;
   border-radius: 0.5rem;
   padding: 0.5rem 0 0.5rem 1rem;
-  border-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--GREY);
   margin-bottom: 1rem;
+}
+
+.form .email.error {
+  color: var(--PRIMARY-COLOR);
+  border: 1px solid var(--PRIMARY-COLOR);
+  background-color: color-mix(
+    in oklab,
+    var(--PRIMARY-COLOR) 20%,
+    var(--WHITE) 80%
+  );
 }
 
 .form .submit-btn {
