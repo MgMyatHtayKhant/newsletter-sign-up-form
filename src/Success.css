@@ -1,3 +1,44 @@
 .success {
-  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 439px;
+  padding: 2rem;
+}
+
+.success img {
+  width: inherit;
+  margin-bottom: 1.5rem;
+}
+
+.success .title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.success .description {
+  color: var(--GREY);
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.description .email {
+  color: black;
+  font-weight: 500;
+}
+
+@media (max-width: 376px) {
+  .success {
+    min-height: 100vh;
+    border-radius: 0;
+    padding: 5rem 1.5rem 3rem;
+  }
+
+  .success .title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .success .description {
+    flex: 1;
+  }
 }
